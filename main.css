@@ -11,7 +11,7 @@ p {
 	max-width: 1600px;
   background-color: ghostwhite;
   background-z-index: 2;
-  margin-bottom: 180px;
+  margin-bottom: 330px;
   padding-bottom: 100px; }
 
 .second {
@@ -21,12 +21,21 @@ p {
 .ion-android-arrow-dropdown-circle {
   font-size: 6rem;
   position: absolute;
-  bottom: -30px;
-  left: calc(50% - 50px); }
-
+  top: -100px;
+  left: calc(50% - 50px); 
+	z-index: 99999;
+	color: white;
+	transition: all .2s ease-in-out; 
+}
+.ion-android-arrow-dropdown-circle:hover {
+	transform: scale(1.1);
+}
+video {
+	width: 100%;
+	height: 100%;
+}
 header {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/assets/images/accurateSign.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,14 +46,33 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; }
-
+  overflow: hidden; 
+	z-index: 99;
+	max-height: 700px;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 1000;
+}
 .main-h1 {
-  position: relative;
+  position: absolute;
+	top: calc(50% - 100px);
+	width: 100%;
+	text-align: center;
+	left: 0px;
   color: white;
-  font-size: 6rem;
+  font-size: 9rem;
   font-weight: 800;
-  margin-top: 0px; }
+	text-shadow: 1px 1px 15px white;
+	z-index: 10000;
+}
 
 .long {
   min-height: 1300px; }
@@ -112,12 +140,36 @@ footer {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 60px 30px 20px 30px;
+  padding: 40px 0px 10px 0px;
   position: fixed;
   bottom: 0;
   z-index: -200; 
 	max-width: 1600px;
 	margin: 0 auto;
+	min-height: 210px;
+}
+#email-input {
+	margin-left: 10px;
+}
+.address h5 {
+	font-size: 2rem
+}
+.address p {
+	font-size: 1.8rem;
+}
+.map-holder {
+	max-height: 200px;
+	max-width: 200px;
+}
+li{
+	list-style: none;
+}
+.ion-social-linkedin,.ion-social-twitter,.ion-social-facebook{
+	color: black;
+	font-size: 4rem;
+	list-style: none;
+	margin-left: -30px;
+	background-color: white;
 }
 
 @media(min-width: 1600px){

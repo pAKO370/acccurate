@@ -14,30 +14,46 @@
 			$('.after-pics').css({'top': (topOffset / 4) + "px"})
 			}
 		}
+		console.log(wScroll);
 		if(wScroll > 200){
-				$('.info-tag').css({'display': 'block'});
-				$('.image-box img').each(function(i){
+			
+			
+			imageLoader('.info-one', '.cont-one')
+			
+			/*$('.info-tag').css({'display': 'block'});
+				$('.cont-one .image-box img').each(function(i){
 			setTimeout(function(){
-				$('.image-box img').eq(i).addClass('is-showing')
+				$('.cont-one .image-box img').eq(i).addClass('is-showing')
 			},300 * (i + 1))
-		});
+		});*/
+		}
+		if(wScroll > 500){
+			imageLoader('.info-two', '.cont-two')
+		}
+		if(wScroll > 750){
+			imageLoader('.info-three', '.cont-three')
 		}
 		
-		
-		console.log(wScroll);
 		if(wScroll < 990){
-			$('.main-h1').css({'top': (wScroll /2) + 'px'});
+			$('.main-h1').css({'margin-top': (wScroll /2) + 'px'});
 		}
 	});
 
 	$('.ion-android-arrow-dropdown-circle').click(function(){
 		
 		$('html, body').animate({
-    	scrollTop: ($('.image-container').first().offset().top)
+    	scrollTop: ($('.second').first().offset().top)
 		},500);
 		
 	})
 	
-	
+	function imageLoader(infoNum, contNum){
+			$( infoNum ).css({'display': 'block'});
+				$( contNum + ' .image-box img').each(function(i){
+			setTimeout(function(){
+				$( contNum +  ' .image-box img').eq(i).addClass('is-showing')
+			},300 * (i + 1))
+		});
+	}
 	
 })();
