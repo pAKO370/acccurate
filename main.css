@@ -12,7 +12,7 @@ p {
   background-color: ghostwhite;
   background-z-index: 2;
   margin-bottom: 330px;
-  padding-bottom: 100px; }
+  padding-bottom: 0px }
 
 .second {
   position: relative;
@@ -98,7 +98,8 @@ section {
 .info-tag p {
   font-size: 2rem;
   letter-spacing: 4px;
-  margin-top: 10px; }
+  margin-top: 10px; 
+}
 
 .image-box {
   max-width: 31%;
@@ -134,7 +135,8 @@ section {
 
 .after-pics {
   position: relative;
-  top: 400px; }
+  top: 400px; 
+	min-height: 275px}
 
 footer {
   width: 100%;
@@ -161,17 +163,112 @@ footer {
 	max-height: 200px;
 	max-width: 200px;
 }
-li{
+.mid {
+	
+}
+.mid li{
 	list-style: none;
+	position: relative;
+	margin-left: -50px;
+	background: white;
+	max-width: 200px;
+	margin-top: 25px;
+	text-decoration: none;
+	transition: all .3s ease;
+}
+.mid a {
+	text-decoration: none;
 }
 .ion-social-linkedin,.ion-social-twitter,.ion-social-facebook{
 	color: black;
 	font-size: 4rem;
 	list-style: none;
-	margin-left: -30px;
-	background-color: white;
+	padding-left: 20px;
+}
+.mid li:hover {
+	transform: scale(1.1);
+	
+}
+input, textarea {
+	color: black;
+}
+@media(max-width: 767px){
+
+.info-tag {
+  width: 100px;
+  padding: 0px 4px;
+  display: none; }
+
+.info-tag p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 10px; 
+}
+	
+	.after-pics p, .second p {
+		font-size: 1.3rem;
+	}
+		.after-pics, .second {
+		padding: 1px 20px;
+		min-height: 100px;
+		margin: 1px;
+	}
+	header {
+		background-image: url(assets/images/mobile-header.png);
+	}
+	.site{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.mobile-footer {
+		padding-top: 20px;
+		position: relative;
+		margin-top: 30px;
+		background: black;
+		color: white;
+		bottom: 0px;
+	}
+	.mobile-footer .address,
+	.mobile-footer .mid{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.mobile-footer .mid,
+	.mobile-footer .contact{
+		
+	}
+	footer {
+		display: none;
+	}
+	.mid li{
+	}
+	.main-h1  {
+		font-size: 4rem;
+		top: calc(50% - 50px);
+	}
+	video {
+		display: none;
+	}
+	.ion-android-arrow-dropdown-circle {
+  	left: calc(50% - 20px);  
+	}
+	
 }
 
+@media(min-width: 769px){
+	.mobile-footer{
+		display: none;
+	}
+}
+@media(max-width: 1000px){
+
+.ion-social-linkedin,.ion-social-twitter,.ion-social-facebook{
+	font-size: 2rem;
+}
+}
 @media(min-width: 1600px){
 	footer {
 		max-width: 1600px;

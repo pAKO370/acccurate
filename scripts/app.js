@@ -1,7 +1,10 @@
 (function(){
 	var windowHeight = $(window).height();
 	//console.log('window height: ' + windowHeight);
-	
+
+	$('.sub').click(function(){
+		alert('Your message has been sent!');
+	})
 	$(window).scroll(function(){
 		var wScroll = $(this).scrollTop();
 		var newNum =  (wScroll - windowHeight) + 200;
