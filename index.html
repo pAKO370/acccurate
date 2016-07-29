@@ -18,7 +18,9 @@
 </div>
 	<div class="site">
 		<header>
-			<video autoplay src= "assets/videos/cnc.mp4" muted loop></video>
+			<video autoplay src= "assets/videos/cnc.mp4" muted loop>
+				<img src="assets/images/mobile-header-min.png" alt="">
+			</video>
 			<div class="overlay"></div>
 			<nav></nav>
 			<h1 class="main-h1">Accurate CNC Machining</h1>
@@ -34,18 +36,19 @@
 		</section>
 		<hr>
 	<div class="image-back">
+	<h1 id="image-heading">Pictures of Previous Work</h1>
 		<div class="image-container container  cont-one">
 			<div class="row">
 				<div class="image-box col-xs-4">
-					<img src="assets/images/hub2.jpg" alt="" class='img one'>
+					<img src="assets/images/hub2-min.jpg" alt="" class='img one'>
 					<div class="info-tag info-one"><p>Blank for Gear Shafts</p></div>
 				</div>
 				<div class="image-box col-xs-4">
-					<img src="assets/images/hub.jpg" alt="" class='img two'>
+					<img src="assets/images/hub-min.jpg" alt="" class='img two'>
 					<div class="info-tag info-one"><p>Hydraulic Cylinders</p></div>
 				</div>
 				<div class="image-box col-xs-4">
-					<img src="assets/images/gears.jpg" alt="" class='img three'>
+					<img src="assets/images/gears-min.jpg" alt="" class='img three'>
 					<div class="info-tag info-one"><p>High Speed Gear Shafts</p></div>
 				</div>
 			</div>
@@ -53,15 +56,15 @@
 		<div class="image-container container cont-two">
 			<div class="row">
 				<div class="image-box col-xs-4">
-					<img src="assets/images/gear2.jpg" alt="" class='img one'>
+					<img src="assets/images/gear2-min.jpg" alt="" class='img one'>
 					<div class="info-tag info-two"><p>Gears for Large Machine</p></div>
 				</div>
 				<div class="image-box col-xs-4">
-					<img src="assets/images/gear.jpg" alt="" class="img two">
+					<img src="assets/images/gear-min.jpg" alt="" class="img two">
 					<div class="info-tag info-two"><p>Gear for Large Machine</p></div>
 				</div>
 				<div class="image-box col-xs-4">
-					<img src="assets/images/forgings2.jpg" alt="" class='img three'>
+					<img src="assets/images/forgings2-min.jpg" alt="" class='img three'>
 					<div class="info-tag info-two"><p>Castings for Pump</p></div>
 				</div>
 			</div>
@@ -69,15 +72,15 @@
 		<div class="image-container container cont-three">
 			<div class="row">
 				<div class="image-box col-xs-4">
-					<img src="assets/images/forgings.jpg" alt="" class='img  one'>
+					<img src="assets/images/forgings-min.jpg" alt="" class='img  one'>
 					<div class="info-tag info-three"><p>Casting for Pump Housing</p></div>
 				</div>
 				<div class="image-box col-xs-4">
-					<img src="assets/images/fixutres.jpg" alt="" class='img two'>
+					<img src="assets/images/fixutres-min.jpg" alt="" class='img two'>
 					<div class="info-tag info-three"><p>Fixtured Pump Gears</p></div>
 				</div>
 				<div class="image-box col-xs-4">
-					<img src="assets/images/hub2.jpg" alt="" class='img three'>
+					<img src="assets/images/hub2-min.jpg" alt="" class='img three'>
 					<div class="info-tag info-three"><p>Blank forGear Shaft</p></div>
 				</div>
 			</div>
@@ -166,8 +169,10 @@
 						<textarea name="message" class="form-control" id="exampleTextarea" rows="5"></textarea>
 					</fieldset>
 					<div class="form-group">
-						<label for="">File upload: </label>
-						<input type="file" name="file" class='form-control'>
+						<label class="file">
+							<input type="file" id="file">
+							<span class="file-custom"></span>
+						</label>
 					</div>
 					<button class="btn btn-primary sub">SEND</button>
 				</form>
